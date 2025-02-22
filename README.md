@@ -8,7 +8,7 @@ My Sustainable Life is a lifestyle habit tracker with a focus on sustainability.
 
 The home page contains an avatar - their pet - in the center with pop-ups surrounding. These pop-ups show categories of habits, each with a checklist of tasks the user can do to help their avatar (and themselves). If the user sticks close to the habits, their avatar will flourish. For example, if the user checks off a “compost” task, their avatar will gain health. When user does not stick to their habits, the avatar will dwindle. For custom habits, the pet will gain 1XP, for sustainable habits, 2XP.
 
-This app targets anyone looking to be held accountable for the good habits they want to build. From people who need incentive to make changes in their lives, to people who are simply looking for a low-maintenance game that also impacts their real life. What better way to represent your progress than with an adorable animal.
+This app targets anyone looking to be held accountable for the good habits they want to build. From people who need incentive to make changes in their lives, to people who are simply looking for a low-maintenance game that also organizes their goals. What better way to represent your progress than with an adorable animal.
 
 At its core, this app combines the fun of a digital pet game with the benefit of using a habit tracker. The user will be encouraged to maintain a healthy lifestyle and be incentivized to weigh sustainability in the choices they make.
 
