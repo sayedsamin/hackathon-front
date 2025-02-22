@@ -41,21 +41,18 @@ const CustomMenu = ({
         borderRadius: 0,
       }}
     >
-      {items.map((item, index) => (
+      {items.map(({ subCategoryId, name }) => (
         <MenuItem
           sx={{ minWidth: "150px" }}
-          key={index}
-          onClick={() => handleCheckboxChange(item)}
+          key={subCategoryId}
+          onClick={() => handleCheckboxChange(subCategoryId)}
         >
           <Checkbox
-            onClick={checkBoxClickHandler.bind(null, index)}
+            onClick={checkBoxClickHandler.bind(null, subCategoryId)}
             sx={{ padding: 0 }}
-            checked={item.checked}
+            // checked={item.checked}
           />
-          <CustomListItemText
-            primary={item.text}
-            sx={{ paddingLeft: "10px" }}
-          />
+          <CustomListItemText primary={name} sx={{ paddingLeft: "10px" }} />
         </MenuItem>
       ))}
     </Menu>

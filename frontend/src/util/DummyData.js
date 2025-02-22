@@ -1,152 +1,52 @@
 const sustainabilityData = [
   {
-    id: 1,
-    mainCategory: "Energy Conservation",
+    categoryId: 1,
+    name: "Energy Usage",
     subCategories: [
+      { subCategoryId: 1, name: "Conserved water or energy", checked: false },
       {
-        text: "Did you turn off the lights when leaving a room?",
-        checked: false,
-      },
-      { text: "Do you use energy-efficient appliances?", checked: false },
-      { text: "Are you mindful of your electricity usage?", checked: false },
-      {
-        text: "Do you unplug devices when they are not in use?",
+        subCategoryId: 2,
+        name: "Chose sustainable transportation",
         checked: false,
       },
     ],
   },
   {
-    id: 2,
-    mainCategory: "Water Conservation",
+    categoryId: 2,
+    name: "Consumption Habits",
     subCategories: [
+      { subCategoryId: 1, name: "Avoided single-use plastic", checked: false },
+      { subCategoryId: 2, name: "Avoided food waste", checked: false },
       {
-        text: "Do you fix leaks promptly to prevent water waste?",
-        checked: false,
+        subCategoryId: 3,
+        name: "Made a sustainable choice when shopping (second-hand, better quality, etc)",
+        checked: false, // Added missing checked property
       },
+      { subCategoryId: 4, name: "Used reusable containers", checked: false }, // Added missing checked property
+    ],
+  },
+  {
+    categoryId: 3,
+    name: "Sustainable Actions",
+    subCategories: [
+      { subCategoryId: 1, name: "Recycled", checked: false },
+      { subCategoryId: 2, name: "Composted", checked: false },
       {
-        text: "Are you conscious of your water usage when taking showers?",
-        checked: false,
-      },
-      { text: "Do you use a water-saving showerhead?", checked: false },
-      {
-        text: "Do you avoid running water when brushing your teeth?",
+        subCategoryId: 3,
+        name: "Bought an environmentally conscious item",
         checked: false,
       },
     ],
   },
   {
-    id: 3,
-    mainCategory: "Waste Reduction",
+    categoryId: 4,
+    name: "Sustainable Bonus",
     subCategories: [
-      { text: "Do you recycle paper, plastic, and glass?", checked: false },
+      { subCategoryId: 1, name: "Grew your own food", checked: false },
+      { subCategoryId: 2, name: "Supported a local business", checked: false },
       {
-        text: "Do you compost food scraps to reduce landfill waste?",
-        checked: false,
-      },
-      {
-        text: "Are you conscious of your packaging waste when shopping?",
-        checked: false,
-      },
-      { text: "Do you avoid single-use plastics?", checked: false },
-    ],
-  },
-  {
-    id: 4,
-    mainCategory: "Sustainable Transportation",
-    subCategories: [
-      {
-        text: "Do you prefer walking or cycling for short trips?",
-        checked: false,
-      },
-      {
-        text: "Do you use public transport to reduce your carbon footprint?",
-        checked: false,
-      },
-      {
-        text: "Have you considered switching to an electric vehicle?",
-        checked: false,
-      },
-      {
-        text: "Do you carpool to reduce the number of vehicles on the road?",
-        checked: false,
-      },
-    ],
-  },
-  {
-    id: 5,
-    mainCategory: "Sustainable Eating Habits",
-    subCategories: [
-      {
-        text: "Do you eat locally sourced foods to reduce food miles?",
-        checked: false,
-      },
-      {
-        text: "Are you mindful of food waste in your household?",
-        checked: false,
-      },
-      {
-        text: "Do you eat more plant-based meals to reduce your environmental impact?",
-        checked: false,
-      },
-      { text: "Do you choose organic foods when possible?", checked: false },
-    ],
-  },
-  {
-    id: 6,
-    mainCategory: "Eco-friendly Products",
-    subCategories: [
-      {
-        text: "Do you choose products with minimal packaging?",
-        checked: false,
-      },
-      {
-        text: "Do you buy second-hand or upcycled items when possible?",
-        checked: false,
-      },
-      {
-        text: "Do you use reusable bags, bottles, and containers?",
-        checked: false,
-      },
-      {
-        text: "Do you avoid fast fashion by purchasing sustainable clothing?",
-        checked: false,
-      },
-    ],
-  },
-  {
-    id: 7,
-    mainCategory: "Green Building and Housing",
-    subCategories: [
-      {
-        text: "Does your home use energy-efficient insulation and windows?",
-        checked: false,
-      },
-      {
-        text: "Do you use eco-friendly cleaning products in your home?",
-        checked: false,
-      },
-      {
-        text: "Do you have a garden that supports local biodiversity?",
-        checked: false,
-      },
-      { text: "Do you use a rainwater harvesting system?", checked: false },
-    ],
-  },
-  {
-    id: 8,
-    mainCategory: "Biodiversity Conservation",
-    subCategories: [
-      {
-        text: "Do you plant trees or support tree planting initiatives?",
-        checked: false,
-      },
-      {
-        text: "Are you involved in local environmental conservation efforts?",
-        checked: false,
-      },
-      { text: "Do you support wildlife protection programs?", checked: false },
-      {
-        text: "Do you make efforts to reduce your environmental footprint when visiting nature?",
+        subCategoryId: 3,
+        name: "Ate organic or minimally processed foods",
         checked: false,
       },
     ],

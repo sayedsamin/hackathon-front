@@ -13,8 +13,14 @@ import {
 import AddIcon from "@mui/icons-material/Add";
 import DeleteIcon from "@mui/icons-material/Delete";
 
-const CategoryFormDialog = ({ isOpen, handleClose, handleSave }) => {
-  const [mainCategory, setMainCategory] = useState("");
+const CategoryFormDialog = ({
+  habbitData,
+  setHabbitData,
+  isOpen,
+  handleClose,
+  handleSave,
+}) => {
+  const [name, setname] = useState("");
   const [subCategories, setSubCategories] = useState([""]);
 
   const handleAddSubCategory = () => {
@@ -35,7 +41,7 @@ const CategoryFormDialog = ({ isOpen, handleClose, handleSave }) => {
   const handleSubmit = () => {
     const newCategory = {
       id: Date.now(),
-      mainCategory,
+      name,
       subCategories,
     };
     handleSave(newCategory);
@@ -49,8 +55,8 @@ const CategoryFormDialog = ({ isOpen, handleClose, handleSave }) => {
         <TextField
           label="Main Category"
           fullWidth
-          value={mainCategory}
-          onChange={(e) => setMainCategory(e.target.value)}
+          value={name}
+          onChange={(e) => setname(e.target.value)}
           margin="dense"
         />
         <List>
