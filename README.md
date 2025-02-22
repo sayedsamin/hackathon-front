@@ -11,19 +11,30 @@ The home page contains an avatar - their pet - in the center with pop-ups surrou
 At its core, this app combines the fun of a digital pet game with the benefit of using a habit tracker. The user will be encouraged to maintain their healthy lifestyles and be incentivized to weigh sustainability in the choices they make.
 
 Features:
+
 -complete tasks.
+
 -add custom tasks.
+
 -view sustainable choices to consider.
+
 -increase in avatar health when tasks are completed.
+
+
 
 Expansion:
 If we were to continue this project, there are many opportunities for expansion and upgrades. 
 
 Additional Features:
+
 -pet animation, direct interaction with pet
+
 -pet upgrades made available when user sticks to habits over time
+
 -view of other My Sustainable Life users and their scores
+
 -drag and drop features for habit categories
+
 -deduction of avatar's health over time, from not completing timed tasks (daily/weekly/monthly)
 
 Team Members: Isabella McEvoy, Vansh Vasudev, Samin , Mahdis, Mandeep
