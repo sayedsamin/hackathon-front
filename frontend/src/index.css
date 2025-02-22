@@ -6,12 +6,6 @@ h3 {
   font-family: "Josefin Sans", sans-serif;
 }
 
-.dashboard {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  width: 100%;
-}
-
 .sub-container {
   display: flex;
   flex-direction: column;

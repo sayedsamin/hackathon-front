@@ -3,7 +3,7 @@ import "./card.css";
 import Button from "../Button/customButton";
 import CustomMenu from "../Menu/menu";
 
-const Card = ({ mainCategory, items }) => {
+const Card = ({ id, mainCategory, setHabbit, items }) => {
   const [anchorEl, setAnchorEl] = useState(null);
   const [checkedItems, setCheckedItems] = useState([]);
 
@@ -30,6 +30,8 @@ const Card = ({ mainCategory, items }) => {
         checkedItems={checkedItems}
         handleCheckboxChange={handleCheckboxChange}
         anchorEl={anchorEl}
+        currentId={id}
+        setHabbit={setHabbit}
         items={items}
         handleClose={handleClose}
       />
