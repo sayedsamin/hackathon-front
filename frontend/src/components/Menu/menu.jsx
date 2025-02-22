@@ -19,11 +19,11 @@ const CustomMenu = ({
   const checkBoxClickHandler = (index) => {
     setHabbit((prevData) =>
       prevData.map((category) =>
-        category.id === currentId
+        category.categoryId === currentId
           ? {
               ...category,
               subCategories: category.subCategories.map((sub, subIndex) =>
-                subIndex === index ? { ...sub, checked: !sub.checked } : sub
+                subIndex === index - 1 ? { ...sub, checked: !sub.checked } : sub
               ),
             }
           : category
@@ -41,7 +41,7 @@ const CustomMenu = ({
         borderRadius: 0,
       }}
     >
-      {items.map(({ subCategoryId, name }) => (
+      {items.map(({ subCategoryId, name, checked }) => (
         <MenuItem
           sx={{ minWidth: "150px" }}
           key={subCategoryId}
@@ -50,7 +50,7 @@ const CustomMenu = ({
           <Checkbox
             onClick={checkBoxClickHandler.bind(null, subCategoryId)}
             sx={{ padding: 0 }}
-            // checked={item.checked}
+            checked={checked}
           />
           <CustomListItemText primary={name} sx={{ paddingLeft: "10px" }} />
         </MenuItem>
