@@ -154,7 +154,3 @@ const sustainabilityData = [
 ];
 
 export default sustainabilityData;
-
-export const Anaminations = [
-  "https://lottie.host/99a1a143-2e4f-4ff1-a182-2a47eb705005/o1hsE75UgZ.lottie",
-];
