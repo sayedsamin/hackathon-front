@@ -1,11 +1,9 @@
 import { useEffect, useState } from "react";
-import sustainabilityData from "../../util/DummyData";
 import Card from "../Card/Card";
 import LottieAnimation from "../Lottie/lottieAnimation";
 import "./main.css";
 
-const Main = () => {
-  const [habbitData, setHabbitData] = useState(sustainabilityData);
+const Main = ({ habbitData, setHabbitData }) => {
   const [checkedCount, setCheckedCount] = useState(0);
   const [totalCount, setTotalCount] = useState(0);
 
@@ -39,12 +37,12 @@ const Main = () => {
     <main style={{ padding: "2rem", minHeight: "90vh" }}>
       <LottieAnimation src={source} />
       <div className="dashboard">
-        {habbitData.map(({ id, mainCategory, subCategories }) => (
+        {habbitData.map(({ categoryId, name, subCategories }) => (
           <Card
-            key={id}
-            id={id}
+            key={categoryId}
+            id={categoryId}
             setHabbit={setHabbitData}
-            mainCategory={mainCategory}
+            mainCategory={name}
             items={subCategories}
           />
         ))}
