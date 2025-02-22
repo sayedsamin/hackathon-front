@@ -1,0 +1,9 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-text-color);
+  height: 5vh;
+  padding: 1rem 0rem;
+  font-family: var(--heading-font);
+}
